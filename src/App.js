@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Header from "./components/Header";
+import HomeScreen from "./components/HomeScreen";
+import Shop from "./components/Shop";
+import CheckOut from "./components/CheckOut";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <a href="https://www.flaticon.com/free-icons/daisy" title="daisy icons">Daisy icons created by Freepik - Flaticon</a> */}
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/checkOut" element={<CheckOut />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
