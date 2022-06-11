@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import logo from '../images/daisy.png'
+import logo from '../components/daisy.png'
 
-function Header() {
+function Header({cartAmount}) {
 
   return (
     <div className='header'>
@@ -12,7 +12,7 @@ function Header() {
       <div className='linkContainer'>
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
-        <Link to="/checkOut">Check Out</Link>
+        <Link to="/checkOut">Check Out {cartAmount}</Link>
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import image from '../images/flowersOnTable.jpg';
+import image from '../components/flowersOnTable.jpg';
 
 function HomeScreen() {
   return (
