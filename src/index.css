@@ -2,11 +2,11 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 body {
  background-color: #d5e8ec;
  font-family: 'Patrick Hand', cursive;
+ overflow-x: hidden;
 }
 .titleContainer{
     display: flex;
@@ -90,8 +90,19 @@ body {
 }
 
 .shoppingContainer{
-    display: flex;
-    width: 50%;
+    width: 62%;
     margin: 10vh auto;
-    background-color: rgb(231, 203, 203) ;
+}
+.cardContainer img{
+    border-radius: 6px;
+    margin: 8px;
+}
+.cardContainer{
+    background-color: #f0ffff;
+    display: flex;
+    flex-direction: column;
+}
+.addToCartBtn{
+    width: 100px;
+    margin: 8px;
 }

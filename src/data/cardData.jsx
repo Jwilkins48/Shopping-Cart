@@ -9,13 +9,13 @@ const cardData = [
         id: 2,
         name: 'Birthday Bouquet',
         src: '../images/Birthday.jpg',
-        price: 80,
+        price: 60,
     },
     {
         id: 3,
         name: 'Anniversary Bouquet',
         src: '../images/anniversary.png',
-        price: 60,
+        price: 80,
     },
     {
         id: 4,

@@ -11,20 +11,22 @@ function App() {
   const [cartAmount, setCartAmount] = useState(0);
   const [cartItems, setCartItems] = useState([]);
 
-const addToCart = (id) => {
-    const check_index = cartItems.findIndex(item => item.id === id);
-    if (check_index !== -1) {
-      cartItems[check_index].cartAmount++;
+  const addToCart = (id) => {
+    //Take out matching ids
+    const checkIndex = cartItems.findIndex(item => item.id === id);
+    //If index matches - update quantity
+    if (checkIndex !== -1) {
+      cartItems[checkIndex].cartAmount++;
       console.log("Quantity updated:", cartItems);
-    } else {
+    } else { //or add new
       cartItems.push({...CardData.find(c => c.id === id), cartAmount: 1})
-      console.log('The product has been added to cart:', cartItems);
+      console.log('The product has been added:', cartItems);
     }
-}
+  }
 
   const handleClick = (id) => {
     setCartAmount(cartAmount + 1);
-    addToCart()
+    addToCart(id)
     console.log(cartItems);
   }
 
@@ -36,7 +38,7 @@ const addToCart = (id) => {
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/shop" element={<Shop handleClick={handleClick} CardData={CardData} />} />
-          <Route path="/checkOut" element={<CheckOut cartAmount={cartAmount} cartItems={cartItems} />} />
+          <Route path="/checkOut" element={<CheckOut cartItems={cartItems} />} />
         </Routes>
       </BrowserRouter>
     </>
