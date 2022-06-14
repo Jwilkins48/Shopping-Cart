@@ -88,21 +88,96 @@ body {
     background-color: #5567a3;
     transform: scale(101%);
 }
+.orderBtn:active{
+    background-color: #5567a3;
+    transform: scale(99%);
+}
 
 .shoppingContainer{
     width: 62%;
     margin: 10vh auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .cardContainer img{
     border-radius: 6px;
-    margin: 8px;
+    margin: 8px 0px 8px 3px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .cardContainer{
     background-color: #f0ffff;
     display: flex;
-    flex-direction: column;
+    border-top: 1px solid #c6ceeb;
+    border-radius: 4px;
 }
 .addToCartBtn{
-    width: 100px;
-    margin: 8px;
+    margin-top: 50px;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px #d8d1d4 solid;
+    background-color: #fafa86;
+    cursor: pointer;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    color: #6e717c;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.addToCartBtn:hover{
+    background-color: #fdfda1;
+    transform: scale(101%);
+}
+.addToCartBtn:active{
+    background-color: #fdfda1;
+    transform: scale(99%);
+}
+.leftShop{
+    flex: 10%;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.rightShop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 90%;
+    text-align: center;
+    font-size: 22px;
+}
+.rightShopMessage{
+    margin-top: 40px;
+    width: 74%;
+}
+
+/* Checkout Page */
+.checkOutContainer{
+    background-color: #f0ffff;
+    width: 70%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cartAmountDisplay{
+    color: #df7ec6;
+}
+.checkoutTitle{
+    padding: 8px;
+    text-align: center;
+    font-size: 40px;
+    color: #ca79b6;
+    margin-bottom: 20px;
+}
+.checkOutItem{
+    height: 55px;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #f1e9ef;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 200px 0 0;
 }

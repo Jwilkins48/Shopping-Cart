@@ -1,10 +1,14 @@
 
 
-function CheckOut({cartItems, cartAmount}) {
+function CheckOut({cartItems}) {
   return (
     <>
-        <div className='cardContainer'>
-          {cartItems.map(items => <div key={items.id}>{items.name} x {items.cartAmount} = ${items.price * items.cartAmount}</div>)}
+        <div className='checkOutContainer'>
+
+          <h2 className="checkoutTitle">Check Out</h2>
+          {cartItems.map(items => <div className="checkOutItem" key={items.id}>{items.name} x {items.cartAmount} = ${items.price * items.cartAmount}</div>)}
+
+          <h2 className="total">Total:</h2>
         </div>
     </>
   )
