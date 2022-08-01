@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Jwilkins48/shopping-cart/static/css/main.3a690157.css",
-    "main.js": "/Jwilkins48/shopping-cart/static/js/main.606b6f46.js",
-    "static/media/flowersOnTable.jpg": "/Jwilkins48/shopping-cart/static/media/flowersOnTable.5d79335ea99a146bb96c.jpg",
-    "static/media/daisy.png": "/Jwilkins48/shopping-cart/static/media/daisy.09a7cdb42f39295ce5bf.png",
-    "index.html": "/Jwilkins48/shopping-cart/index.html",
-    "main.3a690157.css.map": "/Jwilkins48/shopping-cart/static/css/main.3a690157.css.map",
-    "main.606b6f46.js.map": "/Jwilkins48/shopping-cart/static/js/main.606b6f46.js.map"
+    "main.css": "/Jwilkins48/Shopping-Cart/static/css/main.3a690157.css",
+    "main.js": "/Jwilkins48/Shopping-Cart/static/js/main.1e2bb667.js",
+    "static/media/flowersOnTable.jpg": "/Jwilkins48/Shopping-Cart/static/media/flowersOnTable.5d79335ea99a146bb96c.jpg",
+    "static/media/daisy.png": "/Jwilkins48/Shopping-Cart/static/media/daisy.09a7cdb42f39295ce5bf.png",
+    "index.html": "/Jwilkins48/Shopping-Cart/index.html",
+    "main.3a690157.css.map": "/Jwilkins48/Shopping-Cart/static/css/main.3a690157.css.map",
+    "main.1e2bb667.js.map": "/Jwilkins48/Shopping-Cart/static/js/main.1e2bb667.js.map"
   },
   "entrypoints": [
     "static/css/main.3a690157.css",
-    "static/js/main.606b6f46.js"
+    "static/js/main.1e2bb667.js"
   ]
 }
