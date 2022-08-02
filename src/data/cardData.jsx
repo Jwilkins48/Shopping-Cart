@@ -2,13 +2,13 @@ const cardData = [
     {
         id: 1,
         name: 'Wedding Bouquet',
-        src: '../images/weddingFlowers.jpg',
+        src: 'components/images/birthday.jpg',
         price: 100,
     },
     {
         id: 2,
         name: 'Birthday Bouquet',
-        src: '../images/Birthday.jpg',
+        src: '../images/birthday.jpg',
         price: 60,
     },
     {

@@ -1,4 +1,4 @@
-
+import image from '../components/images/birthday.jpg';
 function Shop({handleClick, CardData}) {
   return (
     <>
@@ -7,7 +7,7 @@ function Shop({handleClick, CardData}) {
           <div key={item.id} id={item.id} className='cardContainer'>
             <div className="leftShop">
               <h3>{item.name}</h3> <p>${item.price}</p>
-              <img width='300px' height='280px' src={item.src} alt={item.name}></img>
+              <img width='300px' height='280px' src={image} alt={item.name}></img>
             </div>
             <div className="rightShop">
               <p className="rightShopMessage">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
