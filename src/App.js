@@ -36,7 +36,7 @@ function App() {
       <BrowserRouter>
         <Header cartAmount={cartAmount} />
         <Routes>
-          <Route path="/" element={<HomeScreen />} />
+          <Route path="/home" element={<HomeScreen />} />
           <Route path="/shop" element={<Shop handleClick={handleClick} CardData={CardData} />} />
           <Route path="/checkOut" element={<CheckOut cartItems={cartItems} />} />
         </Routes>
